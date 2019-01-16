@@ -1,0 +1,353 @@
+function onEdit(e){
+  var curDate = Utilities.formatDate(new Date(), "GMT+01:00", "hh:mm");
+  var range = e.range;
+  var colIndex = range.getColumnIndex(); //Same as getColumn()
+  var rowIndex = range.getRowIndex(); //Same as getRow()
+  var DateCol1 = "K9"; //Cell you want to have the date
+  var DateCol2 = "U9";
+  var DateCol3 = "AE9";
+  var DateCol4 = "AO9";
+  var DateCol5 = "AY9";
+  var DateCol6 = "BI9";
+  var DateCol7 = "BS9";
+  var DateCol8 = "CC9";
+  var DateCol9 = "CM9";
+  var DateCol10 = "CW9";
+  var DateCol11 = "DG9";
+  var DateCol12 = "DQ9";
+  var DateCol13 = "EA9";
+  var DateCol14 = "EK9";
+  var DateCol15 = "EU9";
+  var DateCol16 = "FE9";
+  var DateCol17 = "FO9";
+  var DateCol18 = "FY9";
+  var DateCol19 = "GI9";
+  var DateCol20 = "GS9";
+  var DateCol21 = "HC9";
+  var DateCol22 = "HM9";
+  var DateCol23 = "HW9";
+  var DateCol24 = "IG9";
+  var DateCol25 = "IQ9";
+  var DateCol26 = "JA9";
+  var DateCol27 = "JK9";
+  var DateCol28 = "JU9";
+  var DateCol29 = "KE9";
+  var DateCol30 = "KO9";
+  var DateCol31 = "KY9";
+  
+  if(e.range.getSheet().getName() === 'PARCMÒBIL'){
+  
+    var watchRange1 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 3,        // start col
+      right : 11,        // end col
+    };  
+    var watchRange2 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 13,        // start col
+      right : 21,        // end col
+    }; 
+    var watchRange3 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 23,        // start col
+      right : 31,        // end col
+    };  
+    var watchRange4 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 33,        // start col
+      right : 41,        // end col
+    };  
+    var watchRange5 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 43,        // start col
+      right : 51,        // end col
+    };  
+    var watchRange6 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 53,        // start col
+      right : 61,        // end col
+    };  
+    var watchRange7 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 63,        // start col
+      right : 71,        // end col
+    };  
+    var watchRange8 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 73,        // start col
+      right : 81,        // end col
+    };  
+    var watchRange9 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 83,        // start col
+      right : 91,        // end col
+    };  
+    var watchRange10 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 93,        // start col
+      right : 101,        // end col
+    };  
+    var watchRange11 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 103,        // start col
+      right : 111,        // end col
+    };  
+    var watchRange12 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 113,        // start col
+      right : 121,        // end col
+    };  
+    var watchRange13 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 123,        // start col
+      right : 131,        // end col
+    };  
+    var watchRange14 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 133,        // start col
+      right : 141,        // end col
+    };  
+    var watchRange15 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 143,        // start col
+      right : 151,        // end col
+    };  
+    var watchRange16 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 153,        // start col
+      right : 161,        // end col
+    };  
+    var watchRange17 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 163,        // start col
+      right : 171,        // end col
+    };  
+    var watchRange18 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 173,        // start col
+      right : 181,        // end col
+    };  
+    var watchRange19 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 183,        // start col
+      right : 191,        // end col
+    };  
+    var watchRange20 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 193,        // start col
+      right : 201,        // end col
+    };  
+    var watchRange21 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 203,        // start col
+      right : 211,        // end col
+    };  
+    var watchRange22 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 213,        // start col
+      right : 221,        // end col
+    };  
+    var watchRange23 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 223,        // start col
+      right : 231,        // end col
+    };  
+    var watchRange24 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 233,        // start col
+      right : 241,        // end col
+    };  
+    var watchRange25 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 243,        // start col
+      right : 251,        // end col
+    };  
+    var watchRange26 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 253,        // start col
+      right : 261,        // end col
+    };  
+    var watchRange27 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 263,        // start col
+      right : 271,        // end col
+    };  
+    var watchRange28 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 273,        // start col
+      right : 281,        // end col
+    };  
+    var watchRange29 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 283,        // start col
+      right : 291,        // end col
+    };  
+    var watchRange30 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 293,        // start col
+      right : 301,        // end col
+    };  
+    var watchRange31 = { 
+      top : 11,         // start row
+      bottom : 109,     // end row
+      left : 303,        // start col
+      right : 311,        // end col
+    };
+    
+    if(colIndex >= watchRange1.left && colIndex <= watchRange1.right && rowIndex >= watchRange1.top && rowIndex <= watchRange1.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol1).setValue(curDate); //Write the date in the cell
+    
+    }else if (colIndex >= watchRange2.left && colIndex <= watchRange2.right && rowIndex >= watchRange2.top && rowIndex <= watchRange2.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol2).setValue(curDate);
+      
+    }else if (colIndex >= watchRange3.left && colIndex <= watchRange3.right && rowIndex >= watchRange3.top && rowIndex <= watchRange3.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol3).setValue(curDate);
+      
+    }else if (colIndex >= watchRange4.left && colIndex <= watchRange4.right && rowIndex >= watchRange4.top && rowIndex <= watchRange4.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol4).setValue(curDate);
+      
+    }else if (colIndex >= watchRange5.left && colIndex <= watchRange5.right && rowIndex >= watchRange5.top && rowIndex <= watchRange5.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol5).setValue(curDate);
+      
+    }else if (colIndex >= watchRange6.left && colIndex <= watchRange6.right && rowIndex >= watchRange6.top && rowIndex <= watchRange6.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol6).setValue(curDate);
+      
+    }else if (colIndex >= watchRange7.left && colIndex <= watchRange7.right && rowIndex >= watchRange7.top && rowIndex <= watchRange7.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol7).setValue(curDate);
+      
+    }else if (colIndex >= watchRange8.left && colIndex <= watchRange8.right && rowIndex >= watchRange8.top && rowIndex <= watchRange8.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol8).setValue(curDate);
+      
+    }else if (colIndex >= watchRange9.left && colIndex <= watchRange9.right && rowIndex >= watchRange9.top && rowIndex <= watchRange9.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol9).setValue(curDate);
+      
+    }else if (colIndex >= watchRange10.left && colIndex <= watchRange10.right && rowIndex >= watchRange10.top && rowIndex <= watchRange10.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol10).setValue(curDate);
+      
+    }else if (colIndex >= watchRange11.left && colIndex <= watchRange11.right && rowIndex >= watchRange11.top && rowIndex <= watchRange11.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol11).setValue(curDate);
+      
+    }else if (colIndex >= watchRange12.left && colIndex <= watchRange12.right && rowIndex >= watchRange12.top && rowIndex <= watchRange12.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol12).setValue(curDate);
+      
+    }else if (colIndex >= watchRange13.left && colIndex <= watchRange13.right && rowIndex >= watchRange13.top && rowIndex <= watchRange13.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol13).setValue(curDate);
+      
+    }else if (colIndex >= watchRange14.left && colIndex <= watchRange14.right && rowIndex >= watchRange14.top && rowIndex <= watchRange14.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol14).setValue(curDate);
+      
+    }else if (colIndex >= watchRange15.left && colIndex <= watchRange15.right && rowIndex >= watchRange15.top && rowIndex <= watchRange15.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol15).setValue(curDate);
+      
+    }else if (colIndex >= watchRange16.left && colIndex <= watchRange16.right && rowIndex >= watchRange16.top && rowIndex <= watchRange16.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol16).setValue(curDate);
+      
+    }else if (colIndex >= watchRange17.left && colIndex <= watchRange17.right && rowIndex >= watchRange17.top && rowIndex <= watchRange17.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol17).setValue(curDate);
+      
+    }else if (colIndex >= watchRange18.left && colIndex <= watchRange18.right && rowIndex >= watchRange18.top && rowIndex <= watchRange18.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol18).setValue(curDate);
+      
+    }else if (colIndex >= watchRange19.left && colIndex <= watchRange19.right && rowIndex >= watchRange19.top && rowIndex <= watchRange19.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol19).setValue(curDate);
+      
+    }else if (colIndex >= watchRange20.left && colIndex <= watchRange20.right && rowIndex >= watchRange20.top && rowIndex <= watchRange20.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol20).setValue(curDate);
+      
+    }else if (colIndex >= watchRange21.left && colIndex <= watchRange21.right && rowIndex >= watchRange21.top && rowIndex <= watchRange21.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol21).setValue(curDate);
+      
+    }else if (colIndex >= watchRange22.left && colIndex <= watchRange22.right && rowIndex >= watchRange22.top && rowIndex <= watchRange22.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol22).setValue(curDate);
+      
+    }else if (colIndex >= watchRange23.left && colIndex <= watchRange23.right && rowIndex >= watchRange23.top && rowIndex <= watchRange23.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol23).setValue(curDate);
+      
+    }else if (colIndex >= watchRange24.left && colIndex <= watchRange24.right && rowIndex >= watchRange24.top && rowIndex <= watchRange24.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol24).setValue(curDate);
+      
+    }else if (colIndex >= watchRange25.left && colIndex <= watchRange25.right && rowIndex >= watchRange25.top && rowIndex <= watchRange25.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol25).setValue(curDate);
+      
+    }else if (colIndex >= watchRange26.left && colIndex <= watchRange26.right && rowIndex >= watchRange26.top && rowIndex <= watchRange26.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol26).setValue(curDate);
+      
+    }else if (colIndex >= watchRange27.left && colIndex <= watchRange27.right && rowIndex >= watchRange27.top && rowIndex <= watchRange27.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol27).setValue(curDate);
+      
+    }else if (colIndex >= watchRange28.left && colIndex <= watchRange28.right && rowIndex >= watchRange28.top && rowIndex <= watchRange28.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol28).setValue(curDate);
+      
+    }else if (colIndex >= watchRange29.left && colIndex <= watchRange29.right && rowIndex >= watchRange29.top && rowIndex <= watchRange29.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol29).setValue(curDate);
+      
+    }else if (colIndex >= watchRange30.left && colIndex <= watchRange30.right && rowIndex >= watchRange30.top && rowIndex <= watchRange30.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol30).setValue(curDate);
+      
+    }else if (colIndex >= watchRange31.left && colIndex <= watchRange31.right && rowIndex >= watchRange31.top && rowIndex <= watchRange31.bottom && e.Value != 0){
+      
+      SpreadsheetApp.getActiveSheet().getRange(DateCol31).setValue(curDate);
+      
+    };
+  };
+}
